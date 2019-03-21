@@ -4,12 +4,15 @@ $(document).ready(function(){
   $("form#trans-survey").submit(function(event){
     event.preventDefault();
 
+    $('#work-list').empty();
+    $('#fun-list').empty();
+    
     $(".results").show();
     $("input:checkbox[name=worktrans]:checked").each(function(){
       var workTransport = $(this).val();
       $("#work-list").append(workTransport + "<br>");
     });
-    
+
     $('input:checkbox[name=funtrans]:checked').each(function(){
       var funTransport = $(this).val();
       $('#fun-list').append(funTransport + '<br>');

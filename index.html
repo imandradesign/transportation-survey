@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Transportation Survey</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h2>Transportation Survey</h2>
+      </div>
+      <form id="trans-survey">
+        <div class="work-input">
+          <div class="form-group">
+            <h4>In the last month, I have used these modes of transportation to get to work:</h4>
+            <input type="checkbox" name="worktrans" value="walk">Walking<br>
+            <input type="checkbox" name="worktrans" value="car">Driving<br>
+            <input type="checkbox" name="worktrans" value="rolling">Rollerblading<br>
+            <input type="checkbox" name="worktrans" value="jetski">Jet Skiing<br>
+            <input type="checkbox" name="worktrans" value="pogo">Pogo sticking<br>
+          </div>
+        </div>
+        <div class="fun-input">
+          <div class="form-group">
+            <h4>In the last month, I have used these modes of transportation in my personal time:</h4>
+            <input type="checkbox" name="funtrans" value="walk">Walking<br>
+            <input type="checkbox" name="funtrans" value="car">Driving<br>
+            <input type="checkbox" name="funtrans" value="rolling">Rollerblading<br>
+            <input type="checkbox" name="funtrans" value="jetski">Jet Skiing<br>
+            <input type="checkbox" name="funtrans" value="pogo">Pogo sticking<br>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-info" id="sub-btn">Click here to submit</button>
+      </form>
+
+      <div class="results">
+        <h3>Work transport used in the last month:</h3>
+        <h5><span id="work-list"></span></h5>
+        <h3>Personal transport used in the last month:</h3>
+        <h5><span id="fun-list"></span></h5>
+        <button type="button" class="btn btn-success" id="reloadbtn">Click here to take the survey again!</button>
+      </div>
+    </div>
+  </body>
+</html>
